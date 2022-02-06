@@ -49,13 +49,54 @@ Model Parameters Used:
  1.Batch Size : 16
  2.Number of Epochs : 100 set manually but reduced due to callbacks
  3.Loss Function: Binary Crossentropy Loss function addeed with Dice Coefficient Loss Function
- 4.Metrics:
+ 4.Optimizer : Adam
+ 5.Metrics:
     4.1 Dice Coefficient
-    4.2 Jaccard Coefficient
- 5.Training examples: 3693
- 6.Validation examples : 196
- 7.Testing examples :197
- Results: 
+    4.2 Jaccard Index
+ 6.Training examples: 3536
+ 7.Validation examples : 197
+ 8.Testing examples :196
  
- ### ResNet50:
+  ## Results: 
+ 
+  ## Training:  
+  Jaccard_Index:0.7592 ,Dice_Coefficient:i 0.8591,loss=0.1525 
+ 
+  ## Validation:
+    Jaccard_Index: 0.7925 ,Dice_Coefficient:0.8832,loss=0.1255
+ 
+### 2.ResNet_50_Unet:
+ In this directory, a model based on encoder decoder approach with skip connections similar to UNet architecture has been trained on the dataset to localize brain tumors.
+ However,the encoder layers are derived from pre trained ResNet_50 model, hence using Transfer Learning Techniques.
+   Model Parameters Used:
+ 1.Batch Size : 16
+ 2.Number of Epochs : 100 set manually but reduced due to callbacks
+ 3.Loss Function: Binary Crossentropy Loss function addeed with Dice Coefficient Loss Function
+ 4.Optimizer : Adam
+ 5.Metrics:
+    4.1 Dice Coefficient
+    4.2 Jaccard Index
+ 6.Training examples: 3536
+ 7.Validation examples : 197
+ 8.Testing examples :196
+ 
+  ## Results: 
+ 
+  ## Training:  
+   Jaccard_Index:0.8557 ,Dice_Coefficient:0.9211,loss=0.0860
+ 
+  ## Validation:
+   Jaccard_Index: 0.8444  ,Dice_Coefficient:0.9147,loss=0.0926
+    
+### 3.Classification:
+    This directory is for determining the accuracy score of the respective models. The models were used to perform predictions on 393 images to predict whether there is a tumor 
+    associated with the image or not.
+    1. For U_Net based architecture model ,the accuracy score is 0.8905852417302799 or 89%.This implies that it predicted around 350 images correctly.
+    2. For the model based on U_Net architecture and ResNet_50 layeres pre trained with weights of "imagenet" (Transfer learning) ,the accuracy score is 0.9694656488549618 or 97%.This implies that it predicted around 380 images correctly.
+    
+ ### Conclusion
+ 1.Model based on U_Net architecture classified 350 images correctly out of 393 images.
+ 2.Model based on U_Net architecture with ResNet_50 layers pre trained classified 380 images correctly out of 393 images
+    
+ Thus, transfer learning techniques helped increase the performance of the model,providing better accuracy.
  
