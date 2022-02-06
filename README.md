@@ -12,7 +12,7 @@ The aim of this project is to build a Deep Learning based model that can perform
 
 ## Architecture: 
 
-A basic apporach to build a deep neural network architecture for Semantic Segmentation is to stack Convolutional Neural Networks in the conventional "Sequential" manner which
+A basic apporach to build a deep neural network architecture for Image Segmentation is to stack Convolutional Neural Networks in the conventional "Sequential" manner which
 takes input as the image to be segmented and outputs the segmentation map with dimensions same as that of the image(execpt possibly the number of channels in the image).This might
 be achieved via simply stacking Convolutional Neural Layers with "same padding" to preserve dimensions.This architecure thus gives a direct mapping from input image to the output
 image via successive transformations of feature mapping.Since, to extract more features,the number of feature channels must be high, it becomes quite difficult  to preserve the 
