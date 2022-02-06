@@ -1,5 +1,13 @@
 # Brain Tumor Localization and Segmentation from MRI Images
-The aim of this project is to build a model that can perform Brani Tumor localization and segmentation from Magnetic Resonance Imaging (MRI).Brain tumor segmentation has evolved as an important task in medical image processing.Traditionally,tumors in the Brain are detected manually from MRI images that are generated via clinical procedures. However,for a large number of MRI Images,the task of identifying tumors manually becomes increasingly difficult. This stems the ardent need of automation in Brain Tumor recognition. Using advanced Deep Learning Techniques, it becomes possible to localized Brain Tumors from MRI images,thus enabling automatic Brain Tumor detection. This is achieved by semantic segmentation.
+
+
+![Examples-of-Normal-and-Abnormal-images-Brain-MRI-images-in-the-first-row-belong-to](https://user-images.githubusercontent.com/83832850/152699149-a7e2733c-9ff5-4771-aa02-72358fe40df9.png)
+
+
+
+
+
+The aim of this project is to build a Deep Learning based model that can perform Brain Tumor localization and segmentation from Magnetic Resonance Imaging (MRI).Brain tumor segmentation has evolved as an important task in medical image processing.Traditionally,tumors in the Brain are detected manually from MRI images that are generated via clinical procedures. However,for a large number of MRI Images,the task of identifying tumors manually becomes increasingly difficult. This stems the ardent need of automation in Brain Tumor recognition. Using advanced Deep Learning Techniques, it becomes possible to localized Brain Tumors from MRI images,thus enabling automatic Brain Tumor detection. This is achieved by semantic segmentation.
 
 ## Semantic Segmentation:
 The goal of semantic image segmentation is to label each pixel of an image with a corresponding class of what is being represented.This can be achieved via using Convolutional Neural Networks.It performs the task of classifying each pixel of an image into a specified class,thus identifying those pixels which are closely related.
