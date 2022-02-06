@@ -3,7 +3,7 @@ The aim of this project is to build a model that can perform Brani Tumor localiz
 
 ### Semantic Segmentation:
 The goal of semantic image segmentation is to label each pixel of an image with a corresponding class of what is being represented.This can be achieved via using Convolutional Neural Networks.
-#### Architecture: 
+### Architecture: 
     A basic apporach to build a deep neural network architecture for Semantic Segmentation is to stack Convolutional Neural Networks in the conventional "Sequential" manner which takes input as the image to be segmented and outputs the segmentation map with dimensions same as that of the image(execpt possibly the number of channels in the image).This might be achieved via simply stacking Convolutional Neural Layers with "same padding" to preserve dimensions.This architecure thus gives a direct mapping from input image to the output image via successive transformations of feature mapping.Since, to extract more features,the number of feature channels must be high, it becomes quite difficult  to preserve the resolution of an image via the above mentioned architecture.
     
 ## Enocder-Decoder Based Approach:
