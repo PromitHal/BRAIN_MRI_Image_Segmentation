@@ -9,14 +9,6 @@
 
 The aim of this project is to build a Deep Learning based model that can perform Brain Tumor localization and segmentation from Magnetic Resonance Imaging (MRI).Brain tumor segmentation has evolved as an important task in medical image processing.Traditionally,tumors in the Brain are detected manually from MRI images that are generated via clinical procedures. However,for a large number of MRI Images,the task of identifying tumors manually becomes increasingly difficult. This stems the ardent need of automation in Brain Tumor recognition. Using advanced Deep Learning Techniques, it becomes possible to localized Brain Tumors from MRI images,thus enabling automatic Brain Tumor detection. This is achieved by semantic segmentation.
 
-## Semantic Segmentation:
-The goal of semantic image segmentation is to label each pixel of an image with a corresponding class of what is being represented.This can be achieved via using Convolutional Neural Networks.It performs the task of classifying each pixel of an image into a specified class,thus identifying those pixels which are closely related.
-
-![d](https://user-images.githubusercontent.com/83832850/152694560-256bf267-e3ed-4461-95f6-550dddf9c690.jpeg)
-                       
-Image  Source : https://towardsdatascience.com/unet-line-by-line-explanation-9b191c76baf5
-
-
 
 ## Architecture: 
 
