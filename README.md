@@ -45,7 +45,10 @@ This githup repo contains the following directories:
 
 2.ResNet50_plus_UNet
 
-3.Classification
+3.Localization
+
+4.Classification
+
 
 Looking at the directories:
 
@@ -132,9 +135,16 @@ Model Parameters Used:
     
     
     
+ 
+## 3.Localization:
     
+Here, we have used the two trained models to predict the tumors and used the prediction masks to localize the tumors on the original MRI images. This is accomplished by using Canny edge detector on the predicted masks, finding contours and superimposing the contours on the corresponding original MRI images.
     
-## 3.Classification:
+![tt](https://user-images.githubusercontent.com/83832850/152731475-c74e25ba-e51d-4c7d-8a90-5a42d5c489f2.jpg)
+    
+
+    
+## 4.Classification:
 
     This directory is for determining the accuracy score of the respective models. The models were used to perform predictions on 393 images to predict whether there is a tumor 
     associated with the image or not.
