@@ -57,13 +57,14 @@ Looking at the directories:
 In this directory, a model based on an encoder-decoder approach with skip connections similar to UNet architecture has been trained on the dataset to localize brain tumors.
 
 Model Parameters Used:
- 1.Batch Size: 16
+
+ 1. Batch Size: 16
  
  2. Number of Epochs: 100 set manually but reduced due to callbacks
  
  3. Loss Function: Binary Crossentropy Loss function added with Dice Coefficient Loss Function
  
- 4.Optimizer: Adam
+ 4. Optimizer: Adam
  
  5. Metrics:
  
@@ -71,11 +72,26 @@ Model Parameters Used:
     
     4.2 Jaccard Index
     
- 6.Training examples: 3536
+ 6. Training examples: 3536
  
  7. Validation examples: 197
  
  8. Testing examples:196
+
+    | Parameter                | Value                                                  |
+|--------------------------|--------------------------------------------------------|
+| 1. Batch Size            | 16                                                     |
+| 2. Number of Epochs      | 100 (set manually but reduced due to callbacks)       |
+| 3. Loss Function         | Binary Crossentropy Loss function added with Dice Coefficient Loss Function |
+| 4. Optimizer             | Adam                                                   |
+| 5. Metrics               |                                                        |
+|   5.1 Dice Coefficient   |                                                        |
+|   5.2 Jaccard Index      |                                                        |
+| 6. Training examples     | 3536                                                   |
+| 7. Validation examples   | 197                                                    |
+| 8. Testing examples      | 196                                                    |
+
+
  
   ### Results: 
  
