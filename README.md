@@ -52,111 +52,72 @@ This GitHub repo contains the following directories:
 
 Looking at the directories:
 
-## 1.U_Net:
+## 1. Vanilla U_Net:
 
 In this directory, a model based on an encoder-decoder approach with skip connections similar to UNet architecture has been trained on the dataset to localize brain tumors.
 
-Model Parameters Used:
+# Hyperparameters :
 
- 1. Batch Size: 16
- 
- 2. Number of Epochs: 100 set manually but reduced due to callbacks
- 
- 3. Loss Function: Binary Crossentropy Loss function added with Dice Coefficient Loss Function
- 
- 4. Optimizer: Adam
- 
- 5. Metrics:
- 
-    4.1 Dice Coefficient
-    
-    4.2 Jaccard Index
-    
- 6. Training examples: 3536
- 
- 7. Validation examples: 197
- 
- 8. Testing examples:196
-
-    | Parameter                | Value                                                  |
+| Hyper-Parameter          | Value                                                  |
 |--------------------------|--------------------------------------------------------|
 | 1. Batch Size            | 16                                                     |
-| 2. Number of Epochs      | 100 (set manually but reduced due to callbacks)       |
-| 3. Loss Function         | Binary Crossentropy Loss function added with Dice Coefficient Loss Function |
+| 2. Number of Epochs      | 100 (set manually but reduced due to callbacks)        |
+| 3. Loss Function         | Binary Crossentropy Loss function combined with Dice Coefficient Loss Function |
 | 4. Optimizer             | Adam                                                   |
-| 5. Metrics               |                                                        |
-|   5.1 Dice Coefficient   |                                                        |
-|   5.2 Jaccard Index      |                                                        |
-| 6. Training examples     | 3536                                                   |
-| 7. Validation examples   | 197                                                    |
-| 8. Testing examples      | 196                                                    |
+| 5. Metrics               | Dice Coefficient, Jaccard Index                        |
+| 6. Training images       | 3536                                                   |
+| 7. Validation images     | 197                                                    |
+| 8. Testing  images       | 196                                                    |
 
 
  
-  ### Results: 
+### Results: 
  
-  ### Training:  
-    Jaccard_Index:0.7592 ,Dice_Coefficient:0.8591,loss=0.1525 
- 
-  ### Validation:
-    Jaccard_Index: 0.7925 ,Dice_Coefficient:0.8832,loss=0.1255
+### Training:
+| Metric           | Value   |
+|------------------|---------|
+| Jaccard Index    | 0.7592  |
+| Dice Coefficient | 0.8591  |
+| Loss             | 0.1525  |
+
+### Validation:
+| Metric           | Value   |
+|------------------|---------|
+| Jaccard Index    | 0.7925  |
+| Dice Coefficient | 0.8832  |
+| Loss             | 0.1255  |
+
     
-    
-  ![m](https://user-images.githubusercontent.com/83832850/152699047-1869ecce-aac8-4aad-b745-3788e466f93b.jpg)
+![m](https://user-images.githubusercontent.com/83832850/152699047-1869ecce-aac8-4aad-b745-3788e466f93b.jpg)
 
    
  
 ## 2.ResNet_50_Unet:
 
- In this directory, a model based on an encoder-decoder approach with skip connections similar to UNet architecture has been trained on the dataset to localize brain tumors.
+ In this directory, a model based on an encoder-decoder approach with skip connections similar to UNet architecture has been trained on the dataset to segment brain tumors.
  However, the encoder layers are derived from pre trained ResNet_50 model, hence using Transfer Learning Techniques.
-   Model Parameters Used:
-   
- 1. Batch Size: 16
  
- 2. Number of Epochs: 100 set manually but reduced due to callbacks
- 
- 3. Loss Function: Binary Crossentropy Loss function added to Dice Coefficient Loss Function
- 
- 4.Optimizer: Adam
- 
- 5. Metrics:
- 
-    4.1 Dice Coefficient
-    
-    4.2 Jaccard Index
-    
- 6.Training examples: 3536
- 
- 7. Validation examples : 197
- 
- 8. Testing examples :196
+
+# Hyperparameters :
+   Same as previously used.
  
   ### Results: 
  
-  ### Training:  
-    Jaccard_Index:0.8557 ,Dice_Coefficient:0.9211,loss=0.0860
- 
-  ### Validation:
-    Jaccard_Index: 0.8444  ,Dice_Coefficient:0.9147,loss=0.0926
-    
-   
- 
-    
-  
-
+| **Metric**          | **Training** | **Validation** |
+|---------------------|--------------|----------------|
+| Jaccard Index       | 0.8557       | 0.8444         |
+| Dice Coefficient    | 0.9211       | 0.9147         |
+| Loss                | 0.0860       | 0.0926         |
     
 ![t](https://user-images.githubusercontent.com/83832850/152698941-60b94d07-ab85-4e53-a775-5df51451d7db.jpg)
 
     
-    
-    
- 
 ## 3.Localization:
     
 Here, we have used the two trained models to predict the tumors and used the prediction masks to localize the tumors on the original MRI images. This is accomplished by using Canny edge detector on the predicted masks, finding contours, and superimposing the contours on the corresponding original MRI images.
     
 ![tt](https://user-images.githubusercontent.com/83832850/152731475-c74e25ba-e51d-4c7d-8a90-5a42d5c489f2.jpg)
+
     
 
  
