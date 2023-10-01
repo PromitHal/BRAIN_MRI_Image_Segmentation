@@ -110,9 +110,31 @@ In this directory, a model based on an encoder-decoder approach with skip connec
 | Loss                | 0.0860       | 0.0926         |
     
 ![t](https://user-images.githubusercontent.com/83832850/152698941-60b94d07-ab85-4e53-a775-5df51451d7db.jpg)
+## 3.ResNet_50_UANet:
+
+![Uploading image.png…]()
+
+
+
+ In this directory, a model based on an encoder-decoder approach with skip connections similar to UNet architecture has been trained on the dataset to segment brain tumors.
+ However, the encoder layers are derived from pre trained ResNet_50 model, hence using Transfer Learning Techniques. Attention gates have been implemented in the decoder. 
+ 
+
+# Hyperparameters :
+   Same as previously used.
+ 
+  ### Results: 
+ 
+| **Metric**          | **Training** | **Validation** |
+|---------------------|--------------|----------------|
+| Jaccard Index       | 0.8662       | 0.8552         |
+| Dice Coefficient    | 0.9249       | 0.9205         |
+| Loss                | 0.0813       | 0.0919         |
+    
+
 
     
-## 3.Localization:
+## 4.Localization:
     
 Here, we have used the two trained models to predict the tumors and used the prediction masks to localize the tumors on the original MRI images. This is accomplished by using Canny edge detector on the predicted masks, finding contours, and superimposing the contours on the corresponding original MRI images.
     
