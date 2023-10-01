@@ -112,7 +112,9 @@ In this directory, a model based on an encoder-decoder approach with skip connec
 ![t](https://user-images.githubusercontent.com/83832850/152698941-60b94d07-ab85-4e53-a775-5df51451d7db.jpg)
 ## 3.ResNet_50_UANet:
 
-![Uploading image.png…]()
+
+![image](https://github.com/PromitHal/BRAIN_MRI_Image_Segmentation/assets/83832850/3d00b3a8-a8d3-4ca2-bfe4-e143bbe52f76)
+
 
 
 
