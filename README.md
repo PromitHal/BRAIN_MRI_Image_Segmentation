@@ -1,5 +1,13 @@
 # Brain Tumor Localization, Segmentation and Classification from MRI Images
 
+**Model Demo** : https://huggingface.co/spaces/Promit/BrainSEG![tensorflow-tf](https://github.com/PromitHal/BRAIN_MRI_Image_Segmentation/assets/83832850/d253045d-5ec3-4b6b-bc53-96cc69c4a3f8)<svg viewBox="0 0 580 610" xmlns="http://www.w3.org/2000/svg">
+  <path d="M243 323l81-47 80 47-80 46-81-45z" fill="#f6bd3a"/>
+  <path d="M0 184L324 0l241 137-80 139-161-92L81 322 0 184z" fill="#f6bd3a"/>
+  <path d="M243 507v-92l80-46 81-46v92l-80 46v92l-81 47v-93zm0-184l-81-46-81 45v-92L324 92v184l-81 47zm241-93v-46l81-47 1 92-81 47-1-46z" fill="#eb8c23"/>
+  <path d="M162 551V277l80-45 1 91 81 45v93l-81-43v182l-81-49zM40 298L0 274v-90l81 46v92l-41-24zm284-114V92l160 92 1 92-161-92z" fill="#e35a2b"/>
+</svg>
+
+
 
 ![Examples-of-Normal-and-Abnormal-images-Brain-MRI-images-in-the-first-row-belong-to](https://user-images.githubusercontent.com/83832850/152699149-a7e2733c-9ff5-4771-aa02-72358fe40df9.png)
 
